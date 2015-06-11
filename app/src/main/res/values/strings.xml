@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textview">Hello world! New Android App</string>
+    <string name="align_right_test_1">Align right test short.</string>
+    <string name="align_right_test_2">Align right test (Message to make text longer) long.</string>
+    <string name="linear_layout_1">Layout 1</string>
+    <string name="linear_layout_2">Layout 2</string>
+    <string name="linear_layout_3">Layout 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="button">Click!</string>
+    <string name="hint">Here is a hint.</string>
+    <string name="hint_firstname">Type first name.</string>
+    <string name="hint_lastname">Type last name.</string>
+
+    <!--<string name="app_name">Bookmaster General</string>-->
+    <!--<string name="textview">Search For Books!</string>-->
+    <!--<string name="button">Search</string>-->
+    <!--<string name="hint">Title and/or Author</string>-->
+    <string name="activity_details">Book Details</string>
+</resources>

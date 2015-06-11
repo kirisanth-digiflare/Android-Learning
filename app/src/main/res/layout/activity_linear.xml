@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/textview"
+        android:id="@+id/main_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <!--<TextView-->
+    <!--android:text="@string/linear_layout_1"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"/>-->
+
+
+    <!-- The nested layout help to place image and button horizontally even though root is vertical -->
+    <!-- This nested layout contains views of its own -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- Set OnClickListener to trigger results when pressed -->
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button" />
+        <!-- Shows an image from your drawable resources -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/sym_action_call" />
+        <!-- Closing tag for the horizontal nested layout -->
+    </LinearLayout>
+
+    <!-- Displays keyboard when touched -->
+    <EditText
+        android:id="@+id/firstname_edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/hint_firstname" />
+    <!-- Special attribute of textView is hint -->
+
+    <!-- List whose dataset is defined in code with an adapter -->
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"/>
+
+    <!--<EditText-->
+        <!--android:id="@+id/lastname_edittext"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="@string/hint_lastname" />-->
+    <!--&lt;!&ndash; Special attribute of textView is hint &ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:text="@string/linear_layout_3"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"/>-->
+
+</LinearLayout>
